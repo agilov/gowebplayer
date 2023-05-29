@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>All videos</title>
+    <link rel="stylesheet" href="/assets/bs.min.css">
+</head>
+<body>
+<div class="container py-5">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <ul class="list-group">
+                {{range .VideoNames}}
+                <li class="list-group-item">
+                    <a href="/video/{{.}}">{{trimSuffix . ".mp4"}}</a>
+                </li>
+                {{end}}
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

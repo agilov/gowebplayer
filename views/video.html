@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/assets/bs.min.css">
+    <title>{{trimSuffix .Name ".mp4"}}</title>
+</head>
+<body>
+<div class="container py-4">
+    <video tabindex="1" controls class="img-fluid pb-2">
+        <source src="/videos/{{.Name}}" type="video/mp4">
+    </video>
+    <div class="row">
+        <div class="col-8">
+            <h1>{{trimSuffix .Name ".mp4"}}</h1>
+        </div>
+        <div class="col-4 text-end" tabindex="2">
+            <a class="btn btn-primary btn-lg" href="/">На главную</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
